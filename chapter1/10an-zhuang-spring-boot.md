@@ -12,5 +12,3 @@ java -version
 
 
 
-
-

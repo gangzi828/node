@@ -22,5 +22,5 @@
 * 第七部分 spring boot命令行客户端工具（CLI）
 * 第八部分 spring boot 构建工具插件
 * [第九部分 spring boot常见问题指南](di-jiu-bu-fen-spring-boot-chang-jian-wen-ti-zhi-nan.md)
-* 第十部分 附录
+* [关于本翻译](/guan-yu-ben-fan-yi.md#关于本翻译)
 
