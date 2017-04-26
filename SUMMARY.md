@@ -18,6 +18,10 @@
       * [10.1.2 Gradle 安装](chapter1/10an-zhuang-spring-boot/101-kai-fa-zhe-an-zhuang-zhi-nan/1012-gradle-an-zhuang.md)
     * [10.2 安装spring boot CLI](chapter1/102-an-zhuang-spring-boot-cli.md)
       * [10.2.1 手动安装CLI](chapter1/102-an-zhuang-spring-boot-cli/1021-shou-dong-an-zhuang-cli.md)
+      * [10.2.2 使用SDKMAN安装](chapter1/102-an-zhuang-spring-boot-cli/1022-shi-yong-sdkman-an-zhuang.md)
+      * [10.2.3 Mac OSX下通过Homebrew安装](chapter1/102-an-zhuang-spring-boot-cli/1023-mac-osxxia-tong-guo-homebrew-an-zhuang.md)
+      * [10.2.4 Mac 下通过port 命令安装](chapter1/102-an-zhuang-spring-boot-cli/1024-mac-xia-tong-guo-port-ming-ling-an-zhuang.md)
+      * [10.2.5命令行安装](chapter1/102-an-zhuang-spring-boot-cli/1025ming-ling-xing-an-zhuang.md)
 * [第三部分 spring boot 使用](dan-dan-de.md)
 * [第四部分 spring boot 特性](di-si-bu-fen-spring-boot-te-xing.md)
 * 第五部分 spring boot 执行器：产品上线特性
