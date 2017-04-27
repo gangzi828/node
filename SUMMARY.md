@@ -1,5 +1,6 @@
 # Summary
 
+* [关于本翻译](/guan-yu-ben-fan-yi.md#关于本翻译)
 * [第一部分 spring boot 文档结构](README.md)
   * [1.关于此文档](xin-xi.md)
   * [2.获取帮助](2huo-qu-bang-zhu.md)
@@ -36,10 +37,10 @@
   * [12.接下来阅读什么](chapter1/12jie-xia-lai-yue-du-shi-yao.md)
 * [第三部分 使用spring boot](dan-dan-de.md)
 * [第四部分 spring boot 特性](di-si-bu-fen-spring-boot-te-xing.md)
-* 第五部分 spring boot 执行器：产品上线特性
-* 第六部分 部署spring boot应用程序
-* 第七部分 spring boot命令行客户端工具（CLI）
-* 第八部分 spring boot 构建工具插件
-* [第九部分 spring boot常见问题指南](di-jiu-bu-fen-spring-boot-chang-jian-wen-ti-zhi-nan.md)
+* [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
+* [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
+* [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
+* [第八部分 spring boot 构建工具插件](di-ba-bu-fen-spring-boot-gou-jian-gong-ju-cha-jian.md)
 * [关于本翻译](/guan-yu-ben-fan-yi.md#关于本翻译)
+* [第十部分 附录](di-shi-bu-fen-fu-lu.md)
 
