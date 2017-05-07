@@ -18,5 +18,17 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 
 > ![](/assets/import.png)Spring Boot提供了许多FailureAnalyzer实现，并且您也可以自定义FailureAnalyzer。
 
+如果没有失败分析器能够处理异常，您仍然可以通过显示完整的自动配置报告来更好地了解出现的问题。 为此，您需要启用debug属性或启用DEBUG级别日志：
+
+```
+org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer
+```
+
+例如，如果使用java -jar运行应用程序，则可以按如下方式启用调试属性：
+
+```
+$ java -jar myproject-0.0.1-SNAPSHOT.jar --debug
+```
+
 
 
