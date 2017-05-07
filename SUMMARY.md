@@ -37,6 +37,7 @@
   * [12.接下来阅读什么](chapter1/12jie-xia-lai-yue-du-shi-yao.md)
 * [第三部分 使用spring boot](dan-dan-de.md)
   * [13 构建系统](dan-dan-de/13-gou-jian-xi-tong.md)
+    * [13.1 依赖管理](dan-dan-de/13-gou-jian-xi-tong/131-yi-lai-guan-li.md)
 * [第四部分 spring boot 特性](di-si-bu-fen-spring-boot-te-xing.md)
   * [23  SpringApplication](di-si-bu-fen-spring-boot-te-xing/23-springapplication.md)
     * [23.1 启动失败](di-si-bu-fen-spring-boot-te-xing/23-springapplication/231-qi-dong-shi-bai.md)
