@@ -15,5 +15,19 @@ spring boot应用程序的启动Banner可以通过在的类路径中添加一个
 | `${Ansi.NAME}`\(or`${AnsiColor.NAME}`,`${AnsiBackground.NAME}`,`${AnsiStyle.NAME}`\) | 其中NAME是ANSI转义码的名称。 有关详细信息，请参阅AnsiPropertySource。 |
 | `${application.title}` | 在MANIFEST.MF中声明的应用程序标题。 例如：Implementation-Title：MyAppis打印为MyApp。 |
 
+> 如果要以编程方式生成Banner，则可以使用SpringApplication.setBanner（...）方法。 实现org.springframework.boot.Banner接口，并实现自己的printBanner（）方法。
+
+您还可以使用spring.main.banner-mode属性来决定是否必须在System.out（控制台）上打印横幅，使用配置的记录器（log）或根本不打印（关闭）。
+
+打印的Banner将以名称springBootBanner注册为单例bean。
+
+> YAML格式的配置文件用off代表禁止打印Banner，所以如果要禁用应用程序中的Banner，请确保为off添加引号。
+>
+> spring：
+>
+>      main：
+>
+>          banner-mode：“off”
+
 
 
