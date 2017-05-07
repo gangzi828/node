@@ -9,7 +9,7 @@
   * [5.学习spring boot 特性](5spring-boot-te-xing.md)
   * [6.生产环境](6sheng-chan-huan-jing.md)
   * [7.spring boot 高级话题](7spring-boot-gao-ji-hua-ti.md)
-* [第二部分 spring boot 初步](chapter1.md)
+* [第二部分 spring boot 入门](chapter1.md)
   * [8.spring boot 简介](chapter1/8spring-boot-jian-jie.md)
   * [9.系统环境要求](chapter1/9xi-tong-huan-jing-yao-qiu.md)
     * [9.1 Servelet容器](chapter1/9xi-tong-huan-jing-yao-qiu/91-serveletrong-qi.md)
@@ -41,6 +41,7 @@
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
 * [第八部分 spring boot 构建工具插件](di-ba-bu-fen-spring-boot-gou-jian-gong-ju-cha-jian.md)
-* [关于本翻译](/guan-yu-ben-fan-yi.md#关于本翻译)
+* 第九部分 How-to参考手册
 * [第十部分 附录](di-shi-bu-fen-fu-lu.md)
+* [关于本翻译](/guan-yu-ben-fan-yi.md#关于本翻译)
 
