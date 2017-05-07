@@ -36,6 +36,7 @@
     * [11.5 创建一个可执行jar](chapter1/11kai-fa-ni-de-di-yi-ge-spring-boot-ying-yong/115-chuang-jian-yi-ge-ke-zhi-xing-jar.md)
   * [12.接下来阅读什么](chapter1/12jie-xia-lai-yue-du-shi-yao.md)
 * [第三部分 使用spring boot](dan-dan-de.md)
+  * [13 构建系统](dan-dan-de/13-gou-jian-xi-tong.md)
 * [第四部分 spring boot 特性](di-si-bu-fen-spring-boot-te-xing.md)
   * [23  SpringApplication](di-si-bu-fen-spring-boot-te-xing/23-springapplication.md)
     * [23.1 启动失败](di-si-bu-fen-spring-boot-te-xing/23-springapplication/231-qi-dong-shi-bai.md)
