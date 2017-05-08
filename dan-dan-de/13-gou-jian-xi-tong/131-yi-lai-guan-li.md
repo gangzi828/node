@@ -4,5 +4,9 @@
 
 > 注意：必要的时候你也可以自己指定依赖的版本，而不是用Sping Boot推荐的依赖版本。
 
+spring boot依赖关系列表包含了spring的所有组件和精细化的第三方库。该列表可作为标准的BOM依赖清单供Maven或Gradle使用。
+
+> 注意：Spring Boot的每个版本都对应一个Spring框架的基础版本，所以我们强烈建议你不要自己指定Spring Boot所依赖的Spring基础版本。
+
 
 
