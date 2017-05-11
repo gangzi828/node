@@ -10,5 +10,5 @@ public static void main(String[] args) {
 }
 ```
 
-
+在SpringApplication构造函数中传入的变量是spring的资源配置Bean。在大多数情况下，这些Bean都是来自@Configuration注解的类，但也有来自XML配置和包扫描提供的配置Bean。
 
