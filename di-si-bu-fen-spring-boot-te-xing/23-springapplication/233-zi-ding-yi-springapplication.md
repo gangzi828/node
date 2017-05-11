@@ -10,5 +10,11 @@ public static void main(String[] args) {
 }
 ```
 
-在SpringApplication构造函数中传入的变量是spring的资源配置Bean。在大多数情况下，这些Bean都是来自@Configuration注解的类，但也有来自XML配置和包扫描提供的配置Bean。
+> 在SpringApplication构造函数中传入的变量是spring的资源配置Bean。在大多数情况下，这些Bean都是来自@Configuration注解的类，但也有来自XML配置和包扫描提供的配置Bean。
+
+还可以通过application.properties对SpringApplication进行配置，具体细节请参考第24章，外部化配置。
+
+关于SpringConfiguration的完成配置选项，请参考[`SpringApplication`Javadoc](http://docs.spring.io/spring-boot/docs/1.5.3.RELEASE/api/org/springframework/boot/SpringApplication.html)文档。
+
+.
 
