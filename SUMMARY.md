@@ -49,6 +49,7 @@
     * [23.6 Web环境](di-si-bu-fen-spring-boot-te-xing/23-springapplication/236-webhuan-jing.md)
     * [23.7 访问应用程序变量](di-si-bu-fen-spring-boot-te-xing/23-springapplication/237-fang-wen-ying-yong-cheng-xu-bian-liang.md)
     * [23.8 使用ApplicationRunner和CommandLineRunner](di-si-bu-fen-spring-boot-te-xing/23-springapplication/238-shi-yong-applicationrunner-he-commandlinerunner.md)
+    * [23.9 退出应用程序](di-si-bu-fen-spring-boot-te-xing/23-springapplication/239-tui-chu-ying-yong-cheng-xu.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
