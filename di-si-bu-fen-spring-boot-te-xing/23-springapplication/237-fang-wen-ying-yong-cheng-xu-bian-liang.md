@@ -20,5 +20,7 @@ public class MyBean {
 }
 ```
 
-spring boot
+> spring boot还注册了一个带有spring 环境的CommandLinePropertySource，可以通过@Value进行变量注入。
+
+
 
