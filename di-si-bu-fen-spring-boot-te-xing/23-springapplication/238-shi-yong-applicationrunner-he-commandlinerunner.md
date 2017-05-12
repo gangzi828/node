@@ -18,5 +18,5 @@ public class MyBean implements CommandLineRunner {
 }
 ```
 
-
+当程序中有多个CommandLineRunner和ApplicationRunner的Bean的时候，可以通过实现org.springframework.core.Ordered接口活着通过org.springframework.core.annotation.Order这个注解来确定执行的顺序。
 
