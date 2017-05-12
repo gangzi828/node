@@ -32,7 +32,7 @@ new SpringApplicationBuilder()
 * 在refresh执行之后，并且其他相关的回调接口已经准备就绪，程序可以接收请求，发送一个ApplicationReadyEvent事件。
 * 在应用程序启动过程中抛出异常时，发送一个ApplicationFailedEvent事件。
 
-
+> 你通常不再需要使用应用程序事件，只要知道它存在即可。在内部，spring boot使用应用程序事件来处理各种任务。
 
 
 
