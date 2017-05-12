@@ -4,3 +4,19 @@
 
 CommandLineRunner接口以String数组的形式来访问应用程序变量，而ApplicationRunner通过ApplicationArguments接口来访问应用程序变量。
 
+```
+import org.springframework.boot.*
+import org.springframework.stereotype.*
+
+@Component
+public class MyBean implements CommandLineRunner {
+
+    public void run(String... args) {
+        // Do something...
+    }
+
+}
+```
+
+
+
