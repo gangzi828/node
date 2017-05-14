@@ -1,4 +1,6 @@
 ## 23.9 退出应用程序
 
-每个SpringApplication都在JVM注册一个关闭的钩子，以确保当应用程序退出时ApplicationContext可以优雅的关闭。所有标准的Spring生命周期回调（：如DisposableBean的界面或@PreDestroy注解）可被使用。
+每个SpringApplication都在JVM注册一个关闭的钩子，以确保当应用程序退出时ApplicationContext可以优雅的关闭。所有标准的Spring生命周期回调函数都（如DisposableBean接口或@PreDestroy注解）可被使用。
+
+此外，如果希望在应用程序结束返回一个特定的退出代码，可以通过创建一个实现org.springframework.boot.ExitCodeGenerator接口的Bean。
 
