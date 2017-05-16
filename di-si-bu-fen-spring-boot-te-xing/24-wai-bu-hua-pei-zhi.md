@@ -41,3 +41,21 @@ public class MyBean {
 
 在你的应用程序类路径中（例如jar包中），可以通过application.properties给name属性提供一个默认的值。 在新环境中运行时，可以在您的jar外部提供一个application.properties来覆盖该名称; 对于一次性测试，您可以使用特定的命令行开关启动（例如，java -jar app.jar --name =“Spring”）。
 
+> 可以在命令行上提供一个环境变量SPRING\_APPLICATION\_JSON属性。 例如在UN \* X shell中：
+>
+> $ SPRING\_APPLICATION\_JSON ='{“foo”：{“bar”：“spam”}}'java -jar myapp.jar
+>
+> 在本例中，您将在Spring环境中使用foo.bar = spam。 您也可以在系统变量中将JSON作为spring.application.json提供：
+>
+> $ java -Dspring.application.json ='{“foo”：“bar”}'-jar myapp.jar
+>
+> 或命令行参数：
+>
+> $ java -jar myapp.jar --spring.application.json ='{“foo”：“bar”}'
+>
+> 或作为JNDI变量java：comp / env / spring.application.json
+
+
+
+
+
