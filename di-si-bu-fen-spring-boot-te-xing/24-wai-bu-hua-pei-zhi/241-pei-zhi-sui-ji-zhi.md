@@ -11,5 +11,7 @@ my.number.less.than.ten=${random.int(10)}
 my.number.in.range=${random.int[1024,65536]}
 ```
 
+random.int \*语法是OPEN value（，max）CLOSE，其中OPEN，CLOSE是任何字符和值，max是整数。 如果提供max，则value为最小值，max为最大值（不包含最大值）。
+
 
 
