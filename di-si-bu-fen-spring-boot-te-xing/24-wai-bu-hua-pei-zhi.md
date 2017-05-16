@@ -7,7 +7,7 @@ Spring Boot使用非常特殊的PropertySource命令来覆盖属性值。 属性
 1. 在用户家目录下的[Devtools](http://docs.spring.io/spring-boot/docs/1.5.3.RELEASE/reference/htmlsingle/#using-boot-devtools-globalsettings)全局配置文件，（当devtools处于活跃状态时，`~/.spring-boot-devtools.properties`） 
 2. 在测试类中的[`@TestPropertySource`](http://docs.spring.io/spring/docs/4.3.8.RELEASE/javadoc-api/org/springframework/test/context/TestPropertySource.html)
 3. @SpringBootTest\#properties注解属性
-4.     命令行参数
+4. 命令行参数
 5. SPRING\_APPLICATION\_JSON的属性（）
 6. ServletConfig初始化参数
 7. ServletContext初始化参数
@@ -22,7 +22,22 @@ Spring Boot使用非常特殊的PropertySource命令来覆盖属性值。 属性
 16. @Configutation注解的配置类中@PropertySource注解的属性
 17. 通过 SpringApplication.setDefaultProperties指定的默认配置属性
 
+为了展示一个完整的示例，这里我们假设已经定义了一个@Component注解的Bean，该Bean拥有name属性：
 
+```
+import org.springframework.stereotype.*
+import org.springframework.beans.factory.annotation.*
 
+@Component
+public class MyBean {
 
+    @Value("${name}")
+    private String name;
+
+    // ...
+
+}
+```
+
+在你的应用程序类路径中（例如jar包中），可以通过application.properties给name属性提供一个默认的值。
 
