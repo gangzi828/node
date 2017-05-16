@@ -39,5 +39,5 @@ public class MyBean {
 }
 ```
 
-在你的应用程序类路径中（例如jar包中），可以通过application.properties给name属性提供一个默认的值。
+在你的应用程序类路径中（例如jar包中），可以通过application.properties给name属性提供一个默认的值。 在新环境中运行时，可以在您的jar外部提供一个application.properties来覆盖该名称; 对于一次性测试，您可以使用特定的命令行开关启动（例如，java -jar app.jar --name =“Spring”）。
 
