@@ -37,5 +37,5 @@ $ java -jar myproject.jar --spring.config.location=classpath:/default.properties
 
 特定于配置文件的属性从与标准application.properties相同的位置加载，配置文件特定文件始终覆盖非特定文件，而不管特定于配置文件的文件是否在打包的jar内部或外部。
 
-如果指定了几个配置文件，则应用最后一个胜利策略。 例如，由spring.profiles.active属性指定的配置文件在通过SpringApplication API配置的配置之后添加，因此优先。
+如果指定了几个配置文件，则应用最后一个。 例如，由spring.profiles.active属性指定的配置文件在通过SpringApplication API配置的配置之后添加，因此具有高的优先级。
 
