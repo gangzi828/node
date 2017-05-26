@@ -31,7 +31,7 @@ $ java -jar myproject.jar --spring.config.location=classpath:/default.properties
 
 > 如果您使用环境变量而不是系统属性，大多数操作系统不允许使用周期分隔的键名称，但可以使用下划线（例如SPRING\_CONFIG\_NAME代替spring.config.name）。
 
-
+> 如果您运行在容器中，则可以使用JNDI属性（在java:comp / env中）或servlet上下文初始化参数，而不是环境变量或系统属性。
 
 
 
