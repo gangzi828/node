@@ -27,7 +27,5 @@ $ java -jar myproject.jar --spring.config.location=classpath:/default.properties
 
 如果spring.config.location包含目录（而不是文件），那么它们应该以/结尾，（并追加从spring.config.name配置的文件名称）。 在spring.config.location中指定的文件按原样使用，不支持特定于配置文件的变体，并且将被任何特定于配置文件的属性覆盖。
 
-默认的搜索路径classpath：，classpath：/ config，file：，file：config /始终使用，不管spring.config.location的值如何。 该搜索路径从最低优先级排序（文件：config / wins）。 如果您指定自己的位置，则它们优先于所有默认位置，并使用相同的从最低到最高优先级排序。 这样，您可以在application.properties（或使用spring.config.name选择的任何其他基础名称）中为应用程序设置默认值，并在运行时使用不同的文件覆盖它，并保留默认值。
-
-
+默认的搜索路径classpath：，classpath：/ config，file：，file：config /，不管spring.config.location的值如何。 该搜索路径是按照优先级排序（file:config 的优先级最高）的。 如果您指定自己的位置，则它们优先于所有默认位置，并使用相同的从最低到最高优先级排序。 这样，您可以在application.properties（或使用spring.config.name选择的任何其他基础名称）中为应用程序设置默认值，并在运行时使用不同的文件覆盖它，并保留默认值。
 
