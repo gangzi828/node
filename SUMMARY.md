@@ -55,6 +55,7 @@
     * [24.1 配置随机值](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/241-pei-zhi-sui-ji-zhi.md)
     * [24.2 访问命令行属性](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/242-fang-wen-ming-ling-xing-shu-xing.md)
     * [24.3 应用程序属性文件](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/243-ying-yong-cheng-xu-shu-xing-wen-jian.md)
+    * [24.4 配置文件特定的属性](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/244-pei-zhi-wen-jian-te-ding-de-shu-xing.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
