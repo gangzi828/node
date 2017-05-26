@@ -30,8 +30,12 @@ $ java -jar myproject.jar --spring.config.location=classpath:/default.properties
 默认的搜索路径classpath：，classpath：/ config，file：，file：config /，不管spring.config.location的值如何。 该搜索路径是按照优先级排序（file:config 的优先级最高）的。 如果您指定自己的位置，则它们优先于所有默认位置，并使用相同的从最低到最高优先级排序。 这样，您可以在application.properties（或使用spring.config.name选择的任何其他基础名称）中为应用程序设置默认值，并在运行时使用不同的文件覆盖它，并保留默认值。
 
 > 如果您使用环境变量而不是系统属性，大多数操作系统不允许使用周期分隔的键名称，但可以使用下划线（例如SPRING\_CONFIG\_NAME代替spring.config.name）。
-
+>
 > 如果您运行在容器中，则可以使用JNDI属性（在java:comp / env中）或servlet上下文初始化参数，而不是环境变量或系统属性。
 
+除了application.properties文件外，还可以使用命名约定application- {profile} .properties定义特定于配置文件的属性。 Environment具有一组默认配置文件\(默认为\[default\]\)，如果没有设置活动配置文件（即，如果没有显式激活配置文件，则加载了来自application-default.properties的属性）。
 
+特定于配置文件的属性从与标准application.properties相同的位置加载，配置文件特定文件始终覆盖非特定文件，而不管特定于配置文件的文件是否在打包的jar内部或外部。
+
+如果指定了几个配置文件，则应用最后一个胜利策略。 例如，由spring.profiles.active属性指定的配置文件在通过SpringApplication API配置的配置之后添加，因此优先。
 
