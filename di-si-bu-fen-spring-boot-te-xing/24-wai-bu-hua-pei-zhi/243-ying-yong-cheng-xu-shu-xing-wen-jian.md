@@ -29,3 +29,9 @@ $ java -jar myproject.jar --spring.config.location=classpath:/default.properties
 
 默认的搜索路径classpath：，classpath：/ config，file：，file：config /，不管spring.config.location的值如何。 该搜索路径是按照优先级排序（file:config 的优先级最高）的。 如果您指定自己的位置，则它们优先于所有默认位置，并使用相同的从最低到最高优先级排序。 这样，您可以在application.properties（或使用spring.config.name选择的任何其他基础名称）中为应用程序设置默认值，并在运行时使用不同的文件覆盖它，并保留默认值。
 
+> 如果您使用环境变量而不是系统属性，大多数操作系统不允许使用周期分隔的键名称，但可以使用下划线（例如SPRING\_CONFIG\_NAME代替spring.config.name）。
+
+
+
+
+
