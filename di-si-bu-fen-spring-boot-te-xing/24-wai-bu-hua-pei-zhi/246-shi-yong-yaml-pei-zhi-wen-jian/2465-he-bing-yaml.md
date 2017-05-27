@@ -32,7 +32,24 @@ foo:
     - name: my another name
 ```
 
-如果dev配置文件未被激活，FooProperties.list将包含一个如上定义的MyPojo条目。 如果启用了配置文件，列表仍将包含一个条目（名称为“我的另一个名称”，描述为null）。 此配置不会将第二个MyPojo实例添加到列表中，并且不会将项目合并。
+如果dev配置文件未被激活，FooProperties.list将包含一个如上定义的MyPojo条目。 如果启用了配置文件，列表仍将包含一个条目（名称为“my another name”，描述为null）。 此配置不会将第二个MyPojo实例添加到列表中，并且不会将项目合并。
+
+当在多个配置文件中指定集合时，使用具有最高优先级的集合（并且仅使用该配置文件）：
+
+```
+foo:
+  list:
+    - name: my name
+      description: my description
+    - name: another name
+      description: another description
+---
+spring:
+  profiles: dev
+foo:
+  list:
+     - name: my another name
+```
 
 
 
