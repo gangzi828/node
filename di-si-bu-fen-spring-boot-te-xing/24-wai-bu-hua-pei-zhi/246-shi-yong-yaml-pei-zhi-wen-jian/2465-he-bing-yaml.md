@@ -32,5 +32,7 @@ foo:
     - name: my another name
 ```
 
+如果dev配置文件未被激活，FooProperties.list将包含一个如上定义的MyPojo条目。 如果启用了配置文件，列表仍将包含一个条目（名称为“我的另一个名称”，描述为null）。 此配置不会将第二个MyPojo实例添加到列表中，并且不会将项目合并。
+
 
 
