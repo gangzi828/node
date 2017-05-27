@@ -32,5 +32,12 @@ my:
        - foo.bar.com
 ```
 
+将被转换为如下属性：
+
+```
+my.servers[0]=dev.bar.com
+my.servers[1]=foo.bar.com
+```
+
 
 
