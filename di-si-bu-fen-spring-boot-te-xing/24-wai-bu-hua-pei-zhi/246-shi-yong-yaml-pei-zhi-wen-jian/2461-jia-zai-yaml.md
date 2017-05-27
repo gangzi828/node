@@ -55,7 +55,9 @@ public class Config {
 
 配置列表时，需要特别小心，因为覆盖方式将无法正常工作。 在上面的示例中，当我的几个地方重新定义my.servers时，单个元素的目标是覆盖，而不是列表。 要确保具有较高优先级的PropertySource可以覆盖列表，您需要将其定义为单个属性：
 
-我：
+my：
 
-    服务器：dev.bar.com，foo.bar.com
+     servers：dev.bar.com，foo.bar.com
+
+
 
