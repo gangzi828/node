@@ -59,6 +59,8 @@
     * [24.5 属性文件占位符](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/245-shu-xing-wen-jian-zhan-wei-fu.md)
     * [24.6 使用YAML配置文件](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/246-shi-yong-yaml-pei-zhi-wen-jian.md)
       * [24.6.1 加载YAML](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/246-shi-yong-yaml-pei-zhi-wen-jian/2461-jia-zai-yaml.md)
+      * [24.6.2 将YAML作为Spring环境中的属性](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/246-shi-yong-yaml-pei-zhi-wen-jian/2462-jiang-yaml-zuo-wei-spring-huan-jing-zhong-de-shu-xing.md)
+      * [24.6.3 Multi-profile YAML文档](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/246-shi-yong-yaml-pei-zhi-wen-jian/2463-multi-profile-yamlwen-dang.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
