@@ -51,5 +51,5 @@ foo:
      - name: my another name
 ```
 
-
+在上面的示例中，考虑到dev配置文件处于活动状态，FooProperties.list将包含一个MyPojo条目（名称为“my another name”和description null）。
 
