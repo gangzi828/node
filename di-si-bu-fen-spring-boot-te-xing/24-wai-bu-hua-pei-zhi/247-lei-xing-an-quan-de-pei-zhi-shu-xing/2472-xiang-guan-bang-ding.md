@@ -25,11 +25,11 @@ public class OwnerProperties {
 
 表 24.1 宽松绑定
 
-|  |  |
+| person.firstName |  |
 | :---: | :--- |
 | person.first-name | 虚拟符号，建议使用in.properties和.xml文件。 |
 | `person.first_name` | 下划线符号，用于in.properties和.xml文件的替代格式。 |
-| `PERSON_FIRST_NAME` | 大写格式 使用系统环境变量时推荐这种方式。  |
+| `PERSON_FIRST_NAME` | 大写格式 使用系统环境变量时推荐这种方式。 |
 
 
 
