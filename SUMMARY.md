@@ -63,7 +63,7 @@
       * [24.6.3 Multi-profile YAML文档](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/246-shi-yong-yaml-pei-zhi-wen-jian/2463-multi-profile-yamlwen-dang.md)
       * [24.6.4 YAML配置的缺点](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/246-shi-yong-yaml-pei-zhi-wen-jian/2464-yamlpei-zhi-de-que-dian.md)
       * [24.6.5 合并YAML](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/246-shi-yong-yaml-pei-zhi-wen-jian/2465-he-bing-yaml.md)
-    * 24.7 类型安全的配置属性
+    * [24.7 类型安全的配置属性](di-si-bu-fen-spring-boot-te-xing/24-wai-bu-hua-pei-zhi/247-lei-xing-an-quan-de-pei-zhi-shu-xing.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
