@@ -12,5 +12,5 @@ public BarComponent barComponent() {
 }
 ```
 
-
+使用bar前缀定义的任何属性将以与上述FooProperties示例类似的方式映射到该BarComponent bean。
 
