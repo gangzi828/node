@@ -84,5 +84,7 @@ public class MyConfiguration {
 }
 ```
 
+当@ConfigurationProperties bean以这种方式注册时，该bean将具有常规名称：&lt;prefix&gt; - &lt;fqn&gt;，其中&lt;prefix&gt;是@ConfigurationProperties注释中指定的环境密钥前缀，&lt;fqn&gt;是Bean的全限定名称。 如果注解不提供任何前缀，则仅使用该bean的完全限定名称。
 
+上面示例中的bean名称将是foo-com.example.FooProperties。
 
