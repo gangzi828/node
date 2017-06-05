@@ -16,5 +16,5 @@ spring.profiles.include:
   - prodmq
 ```
 
-
+请记住，可以在YAML文档中定义spring.profiles属性，以确定此特定文档何时包含在配置中。 有关详细信息，请参见第72.7节“根据环境更改配置”。
 
