@@ -14,5 +14,5 @@
 | Log4j2 | `log4j2-spring.xml`or`log4j2.xml` |
 | JDK \(Java Util Logging\) | `logging.properties` |
 
-
+如果可能，我们建议您使用-spring变体进行日志记录配置（例如logback-spring.xml而不是logback.xml）。 如果使用标准配置位置，则Spring无法完全控制日志初始化。
 
