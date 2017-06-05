@@ -75,6 +75,7 @@
     * [25.3 Profile-specific配置文件](di-si-bu-fen-spring-boot-te-xing/25-profile/253-pei-zhi-wen-jian-te-ding-de-pei-zhi-wen-jian.md)
   * [26 日志](di-si-bu-fen-spring-boot-te-xing/26-ri-zhi.md)
     * [26.1 日志格式](di-si-bu-fen-spring-boot-te-xing/26-ri-zhi/261-ri-zhi-ge-shi.md)
+    * [26.2 控制台输出日志](di-si-bu-fen-spring-boot-te-xing/26-ri-zhi/262-kong-zhi-tai-shu-chu-ri-zhi.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
