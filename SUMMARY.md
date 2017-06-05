@@ -78,6 +78,7 @@
     * [26.2 控制台输出日志](di-si-bu-fen-spring-boot-te-xing/26-ri-zhi/262-kong-zhi-tai-shu-chu-ri-zhi.md)
       * [26.2.1 日志彩色编码输出](di-si-bu-fen-spring-boot-te-xing/26-ri-zhi/262-kong-zhi-tai-shu-chu-ri-zhi/2621-ri-zhi-cai-se-bian-ma-shu-chu.md)
     * [26.3 文件日志输出](di-si-bu-fen-spring-boot-te-xing/26-ri-zhi/263-wen-jian-ri-zhi-shu-chu.md)
+    * [26.4 日志级别](di-si-bu-fen-spring-boot-te-xing/26-ri-zhi/264-ri-zhi-ji-bie.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
