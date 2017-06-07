@@ -85,6 +85,7 @@
       * [27.1.1 Spring MVC自动配置](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/2711-spring-mvczi-dong-pei-zhi.md)
       * [27.1.2 HttpMessageConverters](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/2712-httpmessageconverters.md)
       * [27.1.3 自定义JSON序列化和反序列化](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/2713-zi-ding-yi-json-xu-lie-hua-he-fan-xu-lie-hua.md)
+      * [27.1.4 MessageCodesResolver](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/2714-messagecodesresolver.md)
     * [27.2 ](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/2713-zi-ding-yi-json-xu-lie-hua-he-fan-xu-lie-hua.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)

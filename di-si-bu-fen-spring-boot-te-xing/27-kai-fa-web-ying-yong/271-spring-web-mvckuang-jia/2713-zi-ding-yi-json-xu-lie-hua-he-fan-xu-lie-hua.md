@@ -24,5 +24,7 @@ public class Example {
 }
 ```
 
+ApplicationContext中的所有@JsonComponent bean将自动注册到Jackson，并且由于@JsonComponent是使用@Component进行元注释的，所以常规的组件扫描规则适用。
 
+Spring Boot还提供了JsonObjectSerializer和JsonObjectDeserializer基类，它们在序列化对象时为标准的Jackson版本提供了有用的替代方法。 有关详细信息，请参阅Javadoc。
 
