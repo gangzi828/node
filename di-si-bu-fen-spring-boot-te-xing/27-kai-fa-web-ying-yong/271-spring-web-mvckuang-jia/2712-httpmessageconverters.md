@@ -22,5 +22,7 @@ public class MyConfiguration {
 }
 ```
 
+上下文中存在的任何HttpMessageConverter bean将被添加到转换器列表中。 您也可以以这种方式覆盖默认转换器。
+
 
 
