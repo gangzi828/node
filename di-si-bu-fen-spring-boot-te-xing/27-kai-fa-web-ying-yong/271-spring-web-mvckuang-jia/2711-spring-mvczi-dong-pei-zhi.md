@@ -13,7 +13,7 @@ Spring Boot提供了适用于大多数应用程序的Spring MVC的自动配置�
 * 自定义Favicon支持（见下）。
 * 自动使用ConfigurableWebBindingInitializer bean（见下文）。
 
+如果要保留Spring Boot MVC功能，并且您只需要添加其他MVC配置（拦截器，格式化程序，视图控制器等），则可以添加自己的WebConfigurerAdapter类型的@Configuration类，但不能使用@EnableWebMvc。 如果要提供RequestMappingHandlerMapping，RequestMappingHandlerAdapter或ExceptionHandlerExceptionResolver的自定义实例，您可以声明一个提供此类组件的WebMvcRegistrationsAdapter实例。
 
-
-
+如果要完全控制Spring MVC，可以使用@EnableWebMvc添加您自己的@Configuration注释。
 
