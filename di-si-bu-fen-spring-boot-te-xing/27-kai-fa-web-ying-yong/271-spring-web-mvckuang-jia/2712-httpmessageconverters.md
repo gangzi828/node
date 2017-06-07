@@ -4,5 +4,23 @@ Spring MVC使用HttpMessageConverter接口转换HTTP请求和响应。 spring bo
 
 如果需要添加或自定义转换器，可以使用Spring Boot的HttpMessageConverters类：
 
+```
+import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
+import org.springframework.context.annotation.*;
+import org.springframework.http.converter.*;
+
+@Configuration
+public class MyConfiguration {
+
+    @Bean
+    public HttpMessageConverters customConverters() {
+        HttpMessageConverter<?> additional = ...
+        HttpMessageConverter<?> another = ...
+        return new HttpMessageConverters(additional, another);
+    }
+
+}
+```
+
 
 
