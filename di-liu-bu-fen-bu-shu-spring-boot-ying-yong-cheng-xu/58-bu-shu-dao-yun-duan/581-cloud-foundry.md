@@ -8,5 +8,9 @@ Cloud Foundry提供默认的buildpacks，如果没有指定其他buildpack，则
 $ cf push acloudyspringtime -p target/demo-0.0.1-SNAPSHOT.jar
 ```
 
+有关更多选项，请参阅cf push文档。 如果在同一目录中存在Cloud Foundry manifest.yml文件，那么将会被查阅。
+
+> 在这里我们将acloudyspringtime作为您应用程序名，你也可以使用其他任何值作为应用程序名。
+
 
 
