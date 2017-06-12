@@ -50,5 +50,5 @@ acloudyspringtime    started           1/1         512M     1G     acloudyspring
 ...
 ```
 
-
+一旦Cloud Foundry确认您的应用程序已部署，您应该能够以给定的URI访问应用程序，在本例URI为http://acloudyspringtime.cfapps.io/。
 
