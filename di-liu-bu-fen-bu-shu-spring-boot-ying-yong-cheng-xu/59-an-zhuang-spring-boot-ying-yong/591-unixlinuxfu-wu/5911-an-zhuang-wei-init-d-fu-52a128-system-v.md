@@ -20,5 +20,13 @@ $ sudo ln -s /var/myapp/myapp.jar /etc/init.d/myapp
 $ service myapp start
 ```
 
+> 如果应用启动失败，检查下\`/var/log/&lt;appname&gt;.log\`中的错误日志。
+
+你也可以标识应用使用标准的操作系统工具自启动，例如，在Debian上：
+
+```
+$ update-rc.d myapp defaults <priority>
+```
+
 
 
