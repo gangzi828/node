@@ -89,6 +89,7 @@
     * [27.2 ](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/2713-zi-ding-yi-json-xu-lie-hua-he-fan-xu-lie-hua.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
+  * [59 安装Spring Boot应用](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/59-an-zhuang-spring-boot-ying-yong.md)
 * [58 云端部署](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan.md)
   * [58.1 Cloud Foundry](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/581-cloud-foundry.md)
     * [58.1.1 绑定服务](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/581-cloud-foundry/5811-bang-ding-fu-wu.md)
@@ -98,6 +99,7 @@
     * [58.4.1 AWS Elastic Beanstalk](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/584-amazon-web-services-aws/5841-aws-elastic-beanstalk.md)
     * [58.4.2 Summary](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/584-amazon-web-services-aws/5842-summary.md)
   * [58.5 Boxfuse和Amazon Web Services](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/585-boxfuse-and-amazon-web-services.md)
+  * [58.6 Google App Engine](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/586-google-app-engine.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
 * [第八部分 spring boot 构建工具插件](di-ba-bu-fen-spring-boot-gou-jian-gong-ju-cha-jian.md)
 * 第九部分 How-to参考手册
