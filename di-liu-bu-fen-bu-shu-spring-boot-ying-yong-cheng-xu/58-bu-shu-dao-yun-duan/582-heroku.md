@@ -60,5 +60,7 @@ To git@heroku.com:agile-sierra-1405.git
  * [new branch]      master -> master
 ```
 
+您的应用程序现在应该在Heroku上运行了。
+
 
 
