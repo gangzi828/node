@@ -28,5 +28,23 @@ $ service myapp start
 $ update-rc.d myapp defaults <priority>
 ```
 
+#### 保护init.d服务
+
+> 以下是关于如何保护作为init.d服务运行的Spring引导应用程序的一组指导。 它并不是为了强化应用程序和运行环境而应该做的所有事情的详尽列表。
+
+当使用\`root\`用户启动\`init.d\`服务时，默认的执行脚本将以拥有该jar文件的用户来运行应用。你最好不要使用\`root\`启动Spring Boot应用，也就是你的应用jar文件拥有者不能是\`root\`，而是创建一个特定用户运行应用，并使用\`chown\`指定该用户拥有jar文件，示例：
+
+```
+$ chown bootapp:bootapp your-app.jar
+```
+
+本示例中，默认执行脚本将使用\`bootapp\`用户运行应用。
+
+你也要采取措施防止修改应用jar文件，首先配置jar文件权限只能被拥有者读取和执行，不能写入：
+
+```
+$ chmod 500 your-app.jar
+```
+
 
 
