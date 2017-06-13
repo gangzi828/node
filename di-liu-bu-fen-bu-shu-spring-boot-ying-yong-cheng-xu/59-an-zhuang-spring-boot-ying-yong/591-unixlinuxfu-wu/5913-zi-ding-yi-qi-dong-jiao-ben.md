@@ -1,3 +1,6 @@
+
+---
+
 ### 59.1.3 自定义启动脚本
 
 Maven或Gradle插件生成的默认内嵌启动脚本可以通过很多方法自定义，对于大多数开发者，使用默认脚本和一些自定义脚本通常就足够了。如果发现不能自定义需要的东西，你可以使用\`embeddedLaunchScript\`选项生成自己的文件。
@@ -35,7 +38,7 @@ Maven或Gradle插件生成的默认内嵌启动脚本可以通过很多方法自
 
 默认脚本支持以下环境变量：
 
-| 变量 | 描述 |
+| Variable | Description |
 | :--- | :--- |
 | `MODE` | The “mode” of operation. The default depends on the way the jar was built, but will usually be`auto`_\(meaning it tries to guess if it is an init script by checking if it is a symlink in a directory called`init.d`\)_. You can explicitly set it to`service`so that the`stop|start|status|restart`commands work, or to`run`if you just want to run the script in the foreground. |
 | `USE_START_STOP_DAEMON` | If the`start-stop-daemon`command, when it’s available, should be used to control the process. Defaults to`true`. |
@@ -50,6 +53,17 @@ Maven或Gradle插件生成的默认内嵌启动脚本可以通过很多方法自
 | `JARFILE` | The explicit location of the jar file, in case the script is being used to launch a jar that it is not actually embedded in. |
 | `DEBUG` | if not empty will set the`-x`flag on the shell process, making it easy to see the logic in the script. |
 | `STOP_WAIT_TIME` | The time in seconds to wait when stopping the application before forcing a shutdown \(`60`by default\). |
+
+\`PID\_FOLDER\`，\`LOG\_FOLDER\`和\`LOG\_FILENAME\`变量只对\`init.d\`服务有效。对于\`systemd\`等价的自定义方式是使用‘service’脚本。
+
+如果\`JARFILE\`和\`APP\_NAME\`出现异常，上面的设置可以使用一个\`.conf\`文件进行配置。该文件预期是放到跟jar文件临近的地方，并且名字相同，但后缀为\`.conf\`而不是\`.jar\`。例如，一个命名为\`/var/myapp/myapp.jar\`的jar将使用名为\`/var/myapp/myapp.conf\`的配置文件：
+
+**myapp.conf. **
+
+```
+JAVA_OPTS=-Xmx1024M
+LOG_FOLDER=/custom/log/folder
+```
 
 
 
