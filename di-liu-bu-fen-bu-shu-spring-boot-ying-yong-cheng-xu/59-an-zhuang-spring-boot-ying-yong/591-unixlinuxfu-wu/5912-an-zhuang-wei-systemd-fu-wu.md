@@ -19,10 +19,14 @@ WantedBy=multi-user.target
 ```
 
 > 记得根据你的应用改变\`Description\`，\`User\`和\`ExecStart\`字段。
-
+>
 > 请注意，ExecStart字段不声明脚本操作命令，这意味着默认情况下使用run命令。
 
+注意跟作为\`init.d\`服务运行不同，使用\`systemd\`这种方式运行应用，PID文件和控制台日志文件表现是不同的，必须在‘service’脚本配置正确的字段，具体参考\[service unit configuration man page\]\(http://www.freedesktop.org/software/systemd/man/systemd.service.html\)。
 
+```
+$ systemctl enable myapp.service
+```
 
-
+有关详细信息，请参阅man systemctl。
 
