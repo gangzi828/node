@@ -97,6 +97,7 @@
   * [58.4 Amazon Web Services \(AWS\)](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/584-amazon-web-services-aws.md)
     * [58.4.1 AWS Elastic Beanstalk](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/584-amazon-web-services-aws/5841-aws-elastic-beanstalk.md)
     * [58.4.2 Summary](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/584-amazon-web-services-aws/5842-summary.md)
+  * [58.5 Boxfuse和Amazon Web Services](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/585-boxfuse-and-amazon-web-services.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
 * [第八部分 spring boot 构建工具插件](di-ba-bu-fen-spring-boot-gou-jian-gong-ju-cha-jian.md)
 * 第九部分 How-to参考手册
