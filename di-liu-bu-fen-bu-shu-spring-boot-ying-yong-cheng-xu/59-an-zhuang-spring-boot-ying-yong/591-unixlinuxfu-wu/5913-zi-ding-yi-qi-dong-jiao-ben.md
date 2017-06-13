@@ -40,7 +40,7 @@ Maven或Gradle插件生成的默认内嵌启动脚本可以通过很多方法自
 
 | Variable | Description |
 | :--- | :--- |
-| `MODE` | The “mode” of operation. The default depends on the way the jar was built, but will usually be`auto`_\(meaning it tries to guess if it is an init script by checking if it is a symlink in a directory called`init.d`\)_. You can explicitly set it to`service`so that the`stop|start|status|restart`commands work, or to`run`if you just want to run the script in the foreground. |
+| `MODE` | The “mode” of operation. The default depends on the way the jar was built, but will usually be`auto`_\(meaning it tries to guess if it is an init script by checking if it is a symlink in a directory called`init.d`\)_. You can explicitly set it to`service`so that the`stop、start、status、restart`commands work, or to`run`if you just want to run the script in the foreground. |
 | `USE_START_STOP_DAEMON` | If the`start-stop-daemon`command, when it’s available, should be used to control the process. Defaults to`true`. |
 | `PID_FOLDER` | The root name of the pid folder \(`/var/run`by default\). |
 | `LOG_FOLDER` | The name of the folder to put log files in \(`/var/log`by default\). |
@@ -58,12 +58,16 @@ Maven或Gradle插件生成的默认内嵌启动脚本可以通过很多方法自
 
 如果\`JARFILE\`和\`APP\_NAME\`出现异常，上面的设置可以使用一个\`.conf\`文件进行配置。该文件预期是放到跟jar文件临近的地方，并且名字相同，但后缀为\`.conf\`而不是\`.jar\`。例如，一个命名为\`/var/myapp/myapp.jar\`的jar将使用名为\`/var/myapp/myapp.conf\`的配置文件：
 
-**myapp.conf. **
+**myapp.conf. **
 
 ```
 JAVA_OPTS=-Xmx1024M
 LOG_FOLDER=/custom/log/folder
 ```
+
+> 如果不喜欢配置文件放到jar附近，你可以使用\`CONF\_FOLDER\`环境变量指定文件的位置。
+
+想要学习如何正确的保护文件可以参考\[the guidelines for securing an init.d service.\]\(the guidelines for securing an init.d service\)。
 
 
 
