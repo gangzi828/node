@@ -1,4 +1,4 @@
-### 58.4.1 AWS Elastic Beanstalk
+### 58.4.1 AWS Elastic Beanstalk
 
 正如Elastic Beanstalk Java指南中所述，部署Java应用程序有两个主要方式： 您可以使用“Tomcat平台”或“Java SE平台”。
 
@@ -23,6 +23,14 @@ server.port=5000
 ```
 deploy:
     artifact: target/demo-0.0.1-SNAPSHOT.jar
+```
+
+**通过设置环境类型降低系统开销**
+
+默认情况下，Elastic Beanstalk环境是负载均衡的。 负载平衡器有系统资源消耗，为避免这种情况，将环境类型设置为“单例模式”，如Amazon文档中所述。 使用CLI也可以使用以下命令创建单一实例环境：
+
+```
+eb create -s
 ```
 
 
