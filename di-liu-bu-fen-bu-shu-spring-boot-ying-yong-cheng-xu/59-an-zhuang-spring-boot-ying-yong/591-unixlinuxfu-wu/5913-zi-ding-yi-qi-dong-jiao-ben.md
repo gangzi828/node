@@ -29,10 +29,27 @@ Maven或Gradle插件生成的默认内嵌启动脚本可以通过很多方法自
 | `useStartStopDaemon` | 如果\`start-stop-daemon\`命令可用，它会控制该实例，默认为\`true\` |
 | `stopWaitTime` | `STOP_WAIT_TIME的默认值。只有在init.d服务时有效`. 默认值是60秒 |
 
-#### 
+#### 在脚本运行时自定义
 
-  
+对于需要在jar文件生成后自定义的项目，你可以使用环境变量或配置文件。
 
+默认脚本支持以下环境变量：
+
+| 变量 | 描述 |
+| :--- | :--- |
+| `MODE` | The “mode” of operation. The default depends on the way the jar was built, but will usually be`auto`_\(meaning it tries to guess if it is an init script by checking if it is a symlink in a directory called`init.d`\)_. You can explicitly set it to`service`so that the`stop|start|status|restart`commands work, or to`run`if you just want to run the script in the foreground. |
+| `USE_START_STOP_DAEMON` | If the`start-stop-daemon`command, when it’s available, should be used to control the process. Defaults to`true`. |
+| `PID_FOLDER` | The root name of the pid folder \(`/var/run`by default\). |
+| `LOG_FOLDER` | The name of the folder to put log files in \(`/var/log`by default\). |
+| `CONF_FOLDER` | The name of the folder to read .conf files from \(same folder as jar-file by default\). |
+| `LOG_FILENAME` | The name of the log file in the`LOG_FOLDER`\(`<appname>.log`by default\). |
+| `APP_NAME` | The name of the app. If the jar is run from a symlink the script guesses the app name, but if it is not a symlink, or you want to explicitly set the app name this can be useful. |
+| `RUN_ARGS` | The arguments to pass to the program \(the Spring Boot app\). |
+| `JAVA_HOME` | The location of the`java`executable is discovered by using the`PATH`by default, but you can set it explicitly if there is an executable file at`$JAVA_HOME/bin/java`. |
+| `JAVA_OPTS` | Options that are passed to the JVM when it is launched. |
+| `JARFILE` | The explicit location of the jar file, in case the script is being used to launch a jar that it is not actually embedded in. |
+| `DEBUG` | if not empty will set the`-x`flag on the shell process, making it easy to see the logic in the script. |
+| `STOP_WAIT_TIME` | The time in seconds to wait when stopping the application before forcing a shutdown \(`60`by default\). |
 
 
 
