@@ -14,5 +14,11 @@
 $ sudo ln -s /var/myapp/myapp.jar /etc/init.d/myapp
 ```
 
+一旦安装成功，你就可以像平常那样启动和停止服务，例如，在一个基于Debian的系统：
+
+```
+$ service myapp start
+```
+
 
 
