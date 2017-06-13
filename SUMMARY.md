@@ -91,6 +91,7 @@
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
   * [59 安装Spring Boot应用](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/59-an-zhuang-spring-boot-ying-yong.md)
     * [59.1 Unix/Linux服务](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/59-an-zhuang-spring-boot-ying-yong/591-unixlinuxfu-wu.md)
+      * [59.1.1 安装为init.d服务\(System V\)](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/59-an-zhuang-spring-boot-ying-yong/591-unixlinuxfu-wu/5911-an-zhuang-wei-init-d-fu-52a128-system-v.md)
 * [58 云端部署](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan.md)
   * [58.1 Cloud Foundry](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/581-cloud-foundry.md)
     * [58.1.1 绑定服务](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/581-cloud-foundry/5811-bang-ding-fu-wu.md)
