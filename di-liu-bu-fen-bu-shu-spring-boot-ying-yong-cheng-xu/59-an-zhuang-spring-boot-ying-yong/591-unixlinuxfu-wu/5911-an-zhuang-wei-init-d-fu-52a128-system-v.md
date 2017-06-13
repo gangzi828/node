@@ -46,5 +46,20 @@ $ chown bootapp:bootapp your-app.jar
 $ chmod 500 your-app.jar
 ```
 
+然后，你也应该采取措施限制应用或账号运行时的冲突造成的损坏。如果攻击者获取访问权，他们可能会让jar文件可写并改变它的内容，使用\`chattr\`让它变为不可变是唯一的保护措施：
+
+```
+$ sudo chattr +i your-app.jar
+```
+
+这会防止任何用户修改jar文件，包括root。
+
+如果root用户用来控制应用服务，并且你使用\[.conf文件\]\(http://docs.spring.io/spring-boot/docs/1.4.1.RELEASE/reference/htmlsingle/\#deployment-script-customization-conf-file\)自定义它的启动，该\`.conf\`文件将被root用户读取和评估，因此它也需要保护。使用\`chmod\`改变文件权限只能被拥有者读取，然后使用\`chown\`改变文件拥有者为root：
+
+```
+$ chmod 400 your-app.conf
+$ sudo chown root:root your-app.conf
+```
+
 
 
