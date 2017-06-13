@@ -22,3 +22,7 @@ class MyBean implements EnvironmentAware {
 
 所有Cloud Foundry属性都以vcap为前缀。 您可以使用vcap属性来访问应用程序信息（如应用程序的公共URL）和服务信息（如数据库凭据）。 有关完整的详细信息，请参阅CloudFoundryVcapEnvironmentPostProcessor Javadoc文档。
 
+> Spring Cloud Connectors项目更适合配置DataSource等任务。Spring Boot包括自动配置支持和Spring Boot启动器 - `spring-boot-starter-cloud-connectors`starter。
+
+
+
