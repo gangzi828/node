@@ -92,6 +92,7 @@
 * [58 云端部署](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan.md)
   * [58.1 Cloud Foundry](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/581-cloud-foundry.md)
     * [58.1.1 绑定服务](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/581-cloud-foundry/5811-bang-ding-fu-wu.md)
+  * [58.2 Heroku](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/582-heroku.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
 * [第八部分 spring boot 构建工具插件](di-ba-bu-fen-spring-boot-gou-jian-gong-ju-cha-jian.md)
 * 第九部分 How-to参考手册
