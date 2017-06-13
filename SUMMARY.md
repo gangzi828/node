@@ -94,6 +94,7 @@
     * [58.1.1 绑定服务](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/581-cloud-foundry/5811-bang-ding-fu-wu.md)
   * [58.2 Heroku](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/582-heroku.md)
   * [58.3 OpenShift](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/583-openshift.md)
+  * [58.4 Amazon Web Services \(AWS\)](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/584-amazon-web-services-aws.md)
 * [第七部分 spring boot命令行客户端工具（CLI）](di-qi-bu-fen-spring-boot-ming-ling-xing-ke-hu-duan-gong-ju-ff08-cli.md)
 * [第八部分 spring boot 构建工具插件](di-ba-bu-fen-spring-boot-gou-jian-gong-ju-cha-jian.md)
 * 第九部分 How-to参考手册
