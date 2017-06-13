@@ -1,0 +1,38 @@
+### 59.1.3 自定义启动脚本
+
+Maven或Gradle插件生成的默认内嵌启动脚本可以通过很多方法自定义，对于大多数开发者，使用默认脚本和一些自定义脚本通常就足够了。如果发现不能自定义需要的东西，你可以使用\`embeddedLaunchScript\`选项生成自己的文件。
+
+**在脚本生成时自定义**
+
+自定义写入jar文件的启动脚本元素是有意义的，例如，为\`init.d\`脚本提供\`description\`，既然知道这会展示到前端，你可能会在生成jar时提供它。
+
+为了自定义写入的元素，你需要为Spring Boot Maven或Gradle插件指定\`embeddedLaunchScriptProperties\`选项。
+
+以下是默认脚本支持的可代替属性：
+
+| 名称 | 描述 |
+| :--- | :--- |
+| `mode` | 脚本模式，默认为\`auto\` |
+| `initInfoProvides` | 'INIT INFO'部分的\`Provides\`，对于Gradle默认为\`spring-boot-application\`，对于Maven默认为\`${project.artifactId}\` |
+| `initInfoRequiredStart` | ‘INIT INFO’部分的\`Required-Start\`，默认是`$remote_fs $syslog $network` |
+| `initInfoRequiredStop` | INIT INFO 部分的Required-Stop，默认是$remote\_fs $syslog $network |
+| `initInfoDefaultStart` | INIT INFO部分的Default-Start，默认是2 3 4 5 |
+| `initInfoDefaultStop` | ‘INIT INFO’部分的\``Default-Stop`\`，默认值是 0 1 6 |
+| `initInfoShortDescription` | ‘INIT INFO’部分的\`Short-Description\`，对于Gradle默认为\`Spring Boot Application\`，对于Maven默认为\`${project.name}\` |
+| `initInfoDescription` | “INIT INFO”部分的\`Description\`，对于Gradle默认为\`Spring Boot Application\`，对于Maven默认为\`${project.description}\`（失败会回退到\`${project.name}\`） |
+| `initInfoChkconfig` | INIT INFO部分的chkconfig .默认是`2345 99 01`. |
+| `confFolder` | \`CONF\_FOLDER\`的默认值，默认为包含jar的文件夹 |
+| `logFolder` | \`LOG\_FOLDER\`的默认值，只对\`init.d\`服务有效 |
+| logfileName | LOGFILENAME`的默认名称，只对init.d服务有效` |
+| `pidFolder` | \`PID\_FOLDER\`的默认值，只对\`init.d\`服务有效 |
+| `pidFilename` | `PID_FOLDER文件夹中的文件默认名称，在init.d服务有效。` |
+| `useStartStopDaemon` | 如果\`start-stop-daemon\`命令可用，它会控制该实例，默认为\`true\` |
+| `stopWaitTime` | `STOP_WAIT_TIME的默认值。只有在init.d服务时有效`. 默认值是60秒 |
+
+#### 
+
+  
+
+
+
+
