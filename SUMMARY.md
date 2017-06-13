@@ -90,6 +90,7 @@
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
   * [59 安装Spring Boot应用](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/59-an-zhuang-spring-boot-ying-yong.md)
+    * [59.1 Unix/Linux服务](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/59-an-zhuang-spring-boot-ying-yong/591-unixlinuxfu-wu.md)
 * [58 云端部署](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan.md)
   * [58.1 Cloud Foundry](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/581-cloud-foundry.md)
     * [58.1.1 绑定服务](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/58-bu-shu-dao-yun-duan/581-cloud-foundry/5811-bang-ding-fu-wu.md)
