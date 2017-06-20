@@ -9,7 +9,7 @@ Spring Boot包括对以下模板引擎的自动配置支持：
 * [Thymeleaf](http://www.thymeleaf.org/)
 * [Mustache](https://mustache.github.io/)
 
-
+> 如果可能，当使用嵌入式servlet容器时，应避免使用JSP，JSP在jar包运行时有几个的限制。
 
 
 
