@@ -16,5 +16,22 @@ spring.mvc.static-path-pattern=/resources/**
 
 > 如果您的应用程序将被打包为jar，请不要使用src/main/webapp目录。 虽然这个目录是一个通用的标准，但它只适用于war包，如果生成一个jar，它将被大多数构建工具忽略。
 
+Spring Boot也支持Spring MVC提供的高级资源处理特性，可用于清除缓存的静态资源或对WebJar使用版本无感知的URLs。
+
+如果想使用针对WebJars版本无感知的URLs（version agnostic），只需要添加\`webjars-locator\`依赖，然后声明你的Webjar。以jQuery为例，\`"/webjars/jquery/dist/jquery.min.js"\`实际为\`"/webjars/jquery/x.y.z/dist/jquery.min.js"\`，\`x.y.z\`为Webjar的版本。
+
+> 如果使用JBoss，你需要声明\`webjars-locator-jboss-vfs\`依赖而不是\`webjars-locator\`，否则所有的Webjars将解析为\`404\`。
+
+要使用缓存清除功能，以下配置将为所有静态资源配置缓存清除解决方案，该方案通过在URL中添加哈希值来实现，例如：
+
+```
+<link href="/css/spring-2a2d595e6ed9a0b24f027f2b63b134d6.css"/>:
+```
+
+```
+spring.resources.chain.strategy.content.enabled=true
+spring.resources.chain.strategy.content.paths=/**
+```
+
 
 
