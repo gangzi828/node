@@ -35,5 +35,15 @@ spring.resources.chain.strategy.content.paths=/**
 
 > 对于Thymeleaf和FreeMarker模版引擎来说，在模版运行时会进行资源链接重写，这通过spring boot自动配置的ResourceUrlEncodingFilter来实现。当使用JSP时，应手动声明此过滤器。 其他模板引擎现在不会自动支持，但可以使用自定义模板宏/帮助程序和使用ResourceUrlProvider。
 
+当使用比如JavaScript模块加载器动态加载资源时，重命名文件是不行的，这也是提供其他策略并能结合使用的原因。下面是一个"fixed"策略，在URL中添加一个静态version字符串而不需要改变文件名：
+
+```
+spring.resources.chain.strategy.content.enabled=true
+spring.resources.chain.strategy.content.paths=/**
+spring.resources.chain.strategy.fixed.enabled=true
+spring.resources.chain.strategy.fixed.paths=/js/lib/
+spring.resources.chain.strategy.fixed.version=v12
+```
+
 
 
