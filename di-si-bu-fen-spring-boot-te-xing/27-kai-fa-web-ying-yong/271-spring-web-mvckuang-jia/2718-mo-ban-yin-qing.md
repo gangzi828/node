@@ -11,5 +11,11 @@ Spring Boot包括对以下模板引擎的自动配置支持：
 
 > 如果可能，当使用嵌入式servlet容器时，应避免使用JSP，JSP在jar包运行时有几个的限制。
 
+当您使用默认配置的模板引擎之一时，您的模板将从src / main / resources / templates自动获取。
+
+> IntelliJ IDEA根据运行应用程序的方式对类路径进行不同的排序。 通过其主要方法在IDE中运行应用程序将导致使用Maven或Gradle或其打包的jar运行应用程序时的不同顺序。 这可能会导致Spring Boot找不到类路径上的模板。 如果您受到此问题的影响，您可以重新排序IDE中的类路径，以便首先放置模块的类和资源。 或者，您可以配置模板前缀以搜索类路径上的每个模板目录：classpath \*：/ templates /。
+
+
+
 
 
