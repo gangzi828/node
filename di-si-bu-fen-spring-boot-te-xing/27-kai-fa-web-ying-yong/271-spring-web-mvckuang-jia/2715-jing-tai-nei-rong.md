@@ -33,5 +33,7 @@ spring.resources.chain.strategy.content.enabled=true
 spring.resources.chain.strategy.content.paths=/**
 ```
 
+> 对于Thymeleaf和FreeMarker模版引擎来说，在模版运行时会进行资源链接重写，这通过spring boot自动配置的ResourceUrlEncodingFilter来实现。当使用JSP时，应手动声明此过滤器。 其他模板引擎现在不会自动支持，但可以使用自定义模板宏/帮助程序和使用ResourceUrlProvider。
+
 
 
