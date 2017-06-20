@@ -45,5 +45,9 @@ spring.resources.chain.strategy.fixed.paths=/js/lib/
 spring.resources.chain.strategy.fixed.version=v12
 ```
 
+使用以上策略，JavaScript模块加载器加载\`"/js/lib/"\`下的文件时会使用一个固定的版本策略\`"/v12/js/lib/mymodule.js"\`，其他资源仍旧使用内容hash的方式\`&lt;link href="/css/spring-2a2d595e6ed9a0b24f027f2b63b134d6.css"/&gt;\`。查看\[ResourceProperties\]\(https://github.com/spring-projects/spring-boot/tree/v1.5.3.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/ResourceProperties.java\)获取更多支持的选项。
+
+> 此功能已在专门的[博客文章](https://spring.io/blog/2014/07/24/spring-framework-4-1-handling-static-web-resources)和[Spring Framework参考文档](http://docs.spring.io/spring/docs/4.3.8.RELEASE/spring-framework-reference/htmlsingle/)中进行了详细描述。
+
 
 
