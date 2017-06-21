@@ -91,6 +91,8 @@
       * [27.1.7 ConfigurableWebBindingInitializer](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/2717-configurablewebbindinginitializer.md)
       * [27.1.8 模版引擎](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/2718-mo-ban-yin-qing.md)
       * [27.1.9 错误处理](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/2719-cuo-wu-chu-li.md)
+      * [27.1.10 Spring HATEOAS](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/27110-spring-hateoas.md)
+      * [27.1.11 CORS的支持](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/27111-corsde-zhi-chi.md)
     * [27.2 ](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/2713-zi-ding-yi-json-xu-lie-hua-he-fan-xu-lie-hua.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
