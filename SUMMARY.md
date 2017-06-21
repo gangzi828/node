@@ -100,6 +100,7 @@
       * [27.3.3 EmbeddedWebApplicationContext](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/273-qian-ru-shi-servlet-rong-qi/2733-embeddedwebapplicationcontext.md)
       * [27.3.4 自定义嵌入式servlet容器](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/273-qian-ru-shi-servlet-rong-qi/2734-zi-ding-yi-qian-ru-shi-servlet-rong-qi.md)
       * [27.3.5 JSP的局限](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/273-qian-ru-shi-servlet-rong-qi/2735-jspde-ju-xian.md)
+  * [28 Security](di-si-bu-fen-spring-boot-te-xing/28-security.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
   * [59 安装Spring Boot应用](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/59-an-zhuang-spring-boot-ying-yong.md)
