@@ -34,5 +34,9 @@ public class Endpoint {
 }
 ```
 
+由于Endpoint是一个Spring @Component，它的生命周期由Spring管理，您可以使用@Autowired进行依赖注入或者使用@Value注入外部配置。默认情况下，Jersey servlet将被注册并映射到/ \*。您可以通过将@ApplicationPath添加到ResourceConfig来更改映射。
 
+默认情况下，Jersey将以名为jerseyServletRegistration的ServletRegistrationBean类型的@Bean中设置为Servlet。默认情况下，servlet将被初始化，但是您可以使用spring.jersey.servlet.load-on-startup进行自定义。您可以通过创建自己的同一个名称来禁用或覆盖该bean。您也可以通过设置spring.jersey.type = filter（在这种情况下，@Bean来替换或替换为jerseyFilterRegistration），使用Filter代替Servlet。 servlet有一个@Order，您可以使用spring.jersey.filter.order设置。可以使用spring.jersey.init。\*来指定Servlet和过滤器注册初始化参数，以指定属性的映射。
+
+这里有一个[Jersey](https://github.com/spring-projects/spring-boot/tree/v1.5.3.RELEASE/spring-boot-samples/spring-boot-sample-jersey)示例，所以你可以看到如何设置。还有一个Jarsey1.x示例。请注意，在Jersey1.x示例中，spring-boot maven插件已经被配置为打开一些Jersey jar，以便可以通过JAX-RS实现扫描（因为示例要求它们在其Filter注册中进行扫描） 。如果您的任何JAX-RS资源被打包为嵌套的jar，您可能需要执行相同操作。
 
