@@ -94,6 +94,7 @@
       * [27.1.10 Spring HATEOAS](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/27110-spring-hateoas.md)
       * [27.1.11 CORS的支持](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/271-spring-web-mvckuang-jia/27111-corsde-zhi-chi.md)
     * [27.2 JAX-RS和Jersey](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/2713-zi-ding-yi-json-xu-lie-hua-he-fan-xu-lie-hua.md)
+    * [27.3 嵌入式Servlet容器](di-si-bu-fen-spring-boot-te-xing/27-kai-fa-web-ying-yong/273-qian-ru-shi-servlet-rong-qi.md)
 * [第五部分 spring boot 执行器：产品上线特性](di-wu-bu-fen-spring-boot-zhi-xing-qi-ff1a-chan-pin-shang-xian-te-xing.md)
 * [第六部分 部署spring boot应用程序](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu.md)
   * [59 安装Spring Boot应用](di-liu-bu-fen-bu-shu-spring-boot-ying-yong-cheng-xu/59-an-zhuang-spring-boot-ying-yong.md)
