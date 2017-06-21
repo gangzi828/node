@@ -33,5 +33,20 @@ public class CustomizationBean implements EmbeddedServletContainerCustomizer {
 }
 ```
 
+#### 自定义ConfigurableEmbeddedServletContainer容器
+
+如果上述定制技术太有限，您可以自己注册TomcatEmbeddedServletContainerFactory，JettyEmbeddedServletContainerFactory或UndertowEmbeddedServletContainerFactory bean。
+
+```
+@Bean
+public EmbeddedServletContainerFactory servletContainer() {
+    TomcatEmbeddedServletContainerFactory factory = new TomcatEmbeddedServletContainerFactory();
+    factory.setPort(9000);
+    factory.setSessionTimeout(10, TimeUnit.MINUTES);
+    factory.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/notfound.html"));
+    return factory;
+}
+```
+
 
 
