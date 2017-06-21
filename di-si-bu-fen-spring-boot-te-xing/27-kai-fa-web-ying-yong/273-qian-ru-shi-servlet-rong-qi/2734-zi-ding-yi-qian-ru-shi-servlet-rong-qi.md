@@ -48,5 +48,5 @@ public EmbeddedServletContainerFactory servletContainer() {
 }
 ```
 
-
+spring boot提供了许多配置选项。 如果您需要做更多的配置，spring boot还提供几种保护方法“钩子”。 有关详细信息，请参阅源代码文档。
 
