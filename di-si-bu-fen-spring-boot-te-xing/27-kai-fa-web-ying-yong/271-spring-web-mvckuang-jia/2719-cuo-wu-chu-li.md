@@ -62,5 +62,65 @@ src/
              +- <other templates>
 ```
 
+对于更复杂的错误映射，您还可以添加实现ErrorViewResolver接口的bean。
+
+```
+public class MyErrorViewResolver implements ErrorViewResolver {
+
+    @Override
+    public ModelAndView resolveErrorView(HttpServletRequest request,
+            HttpStatus status, Map<String, Object> model) {
+        // Use the request or status to optionally return a ModelAndView
+        return ...
+    }
+
+}
+```
+
+您还可以使用常规Spring MVC功能，如@ExceptionHandler方法和@ControllerAdvice。 然后，ErrorController将接收任何未处理的异常。
+
+#### 非Spring MVC程序的错误映射
+
+对于不使用Spring MVC的应用程序，可以使用ErrorPageRegistrar接口直接注册ErrorPages。 这个抽象直接与底层的嵌入式servlet容器一起工作，即使没有Spring MVC DispatcherServlet也可以工作。
+
+```
+@Bean
+public ErrorPageRegistrar errorPageRegistrar(){
+    return new MyErrorPageRegistrar();
+}
+
+// ...
+
+private static class MyErrorPageRegistrar implements ErrorPageRegistrar {
+
+    @Override
+    public void registerErrorPages(ErrorPageRegistry registry) {
+        registry.addErrorPages(new ErrorPage(HttpStatus.BAD_REQUEST, "/400"));
+    }
+
+}
+```
+
+注： 如果您注册一个最终由Filter过滤的路径的ErrorPage（例如，与某些非Spring Web框架（例如Jersey和Wicket）相同），则必须将Filter显式注册为ERROR调度程序。
+
+```
+@Bean
+public FilterRegistrationBean myFilter() {
+    FilterRegistrationBean registration = new FilterRegistrationBean();
+    registration.setFilter(new MyFilter());
+    ...
+    registration.setDispatcherTypes(EnumSet.allOf(DispatcherType.class));
+    return registration;
+}
+```
+
+（默认的FilterRegistrationBean不包括ERROR调度程序类型）。
+
+#### WebSphere服务器的错误处理
+
+当部署到servlet容器时，Spring Boot使用其错误页面过滤器将具有错误状态的请求转发到相应的错误页面。 如果响应尚未提交，则该请求只能转发到正确的错误页面。 默认情况下，WebSphere Application Server 8.0和更高版本在成功完成servlet的服务方法后提交响应。 您应该通过将com.ibm.ws.webcontainer.invokeFlushAfterService设置为false来禁用此行为。
+
+
+
 
 
