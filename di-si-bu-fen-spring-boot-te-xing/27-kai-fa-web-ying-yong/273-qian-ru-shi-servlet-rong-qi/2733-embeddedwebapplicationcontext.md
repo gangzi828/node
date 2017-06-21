@@ -1,0 +1,8 @@
+### 27.3.3 EmbeddedWebApplicationContext
+
+在引导下，Spring Boot使用一种新型的ApplicationContext来嵌入式的servlet容器支持。 EmbeddedWebApplicationContext是一种特殊类型的WebApplicationContext，它通过搜索单个EmbeddedServletContainerFactory bean来引导自身。 通常，TomcatEmbeddedServletContainerFactory，JettyEmbeddedServletContainerFactory或UndertowEmbeddedServletContainerFactory将被自动配置。
+
+> 您通常不需要知道这些实现类。 大多数应用程序将被自动配置，并将创建适当的ApplicationContext和EmbeddedServletContainerFactory。
+
+
+
